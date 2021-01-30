@@ -1,0 +1,5 @@
+2021/01/22-22:09:09.170 5e16 Reusing MANIFEST /home/vlermanda/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.spotify.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/01/22-22:09:12.637 5ea8 Level-0 table #5: started
+2021/01/22-22:09:12.640 5ea8 Level-0 table #5: 1582 bytes OK
+2021/01/22-22:09:12.647 5ea8 Delete type=0 #3
+2021/01/22-22:09:12.647 5ea8 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

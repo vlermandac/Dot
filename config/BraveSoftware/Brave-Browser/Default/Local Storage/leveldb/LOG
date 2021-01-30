@@ -1,0 +1,27 @@
+2021/01/30-08:22:29.483 3 Reusing MANIFEST /home/vlermanda/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2021/01/30-08:22:29.485 3 Recovering log #2372
+2021/01/30-08:22:29.486 3 Reusing old log /home/vlermanda/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/002372.log 
+2021/01/30-08:27:33.370 b Level-0 table #2376: started
+2021/01/30-08:27:33.374 b Level-0 table #2376: 22800 bytes OK
+2021/01/30-08:27:33.381 b Delete type=0 #2372
+2021/01/30-09:39:42.155 37 Level-0 table #2378: started
+2021/01/30-09:39:42.171 37 Level-0 table #2378: 415285 bytes OK
+2021/01/30-09:39:42.177 37 Delete type=0 #2375
+2021/01/30-09:47:32.611 3b Level-0 table #2380: started
+2021/01/30-09:47:32.627 3b Level-0 table #2380: 409053 bytes OK
+2021/01/30-09:47:32.633 3b Delete type=0 #2377
+2021/01/30-09:47:32.634 37 Compacting 4@0 + 1@1 files
+2021/01/30-09:47:32.698 37 Generated table #2381@0: 1293 keys, 1773249 bytes
+2021/01/30-09:47:32.698 37 Compacted 4@0 + 1@1 files => 1773249 bytes
+2021/01/30-09:47:32.702 37 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/01/30-09:47:32.703 37 Delete type=2 #2380
+2021/01/30-09:47:32.703 37 Delete type=2 #2376
+2021/01/30-09:47:32.703 37 Delete type=2 #2371
+2021/01/30-09:47:32.703 37 Delete type=2 #2373
+2021/01/30-09:47:32.703 37 Delete type=2 #2378
+2021/01/30-10:29:00.434 52 Level-0 table #2383: started
+2021/01/30-10:29:00.446 52 Level-0 table #2383: 16131 bytes OK
+2021/01/30-10:29:00.451 52 Delete type=0 #2379
+2021/01/30-12:23:57.839 60 Level-0 table #2385: started
+2021/01/30-12:23:57.853 60 Level-0 table #2385: 18998 bytes OK
+2021/01/30-12:23:57.859 60 Delete type=0 #2382

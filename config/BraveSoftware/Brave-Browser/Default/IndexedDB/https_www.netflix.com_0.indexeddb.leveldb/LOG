@@ -1,0 +1,7 @@
+2021/01/23-16:19:52.195 6d4 Reusing MANIFEST /home/vlermanda/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.netflix.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/01/23-16:19:52.196 6d4 Recovering log #3
+2021/01/23-16:19:52.205 6d4 Reusing old log /home/vlermanda/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.netflix.com_0.indexeddb.leveldb/000003.log 
+2021/01/23-16:20:07.599 982 Level-0 table #5: started
+2021/01/23-16:20:07.612 982 Level-0 table #5: 565748 bytes OK
+2021/01/23-16:20:07.619 982 Delete type=0 #3
+2021/01/23-16:20:07.619 982 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

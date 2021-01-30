@@ -1,0 +1,5 @@
+2021/01/26-16:03:59.537 6ea1 Reusing MANIFEST /home/vlermanda/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.notion.so_0.indexeddb.leveldb/MANIFEST-000001
+2021/01/26-16:05:41.071 6ebd Level-0 table #5: started
+2021/01/26-16:05:41.075 6ebd Level-0 table #5: 2365 bytes OK
+2021/01/26-16:05:41.079 6ebd Delete type=0 #3
+2021/01/26-16:05:41.079 6ebd Manual compaction at level-0 from (begin) .. (end); will stop at (end)

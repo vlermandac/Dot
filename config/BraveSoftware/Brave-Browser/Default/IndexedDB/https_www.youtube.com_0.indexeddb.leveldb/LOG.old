@@ -1,0 +1,15 @@
+2021/01/30-10:09:07.406 138f Reusing MANIFEST /home/vlermanda/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/01/30-10:09:07.407 138f Recovering log #105
+2021/01/30-10:09:07.407 138f Reusing old log /home/vlermanda/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.youtube.com_0.indexeddb.leveldb/000105.log 
+2021/01/30-10:36:29.378 16e9 Level-0 table #110: started
+2021/01/30-10:36:29.409 16e9 Level-0 table #110: 1137008 bytes OK
+2021/01/30-10:36:29.414 16e9 Delete type=0 #105
+2021/01/30-10:36:29.414 16e9 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/01/30-10:36:29.414 16e9 Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x02\x01\x1f\x04\x04\x01\x06\x00Q\x00U\x00E\x00U\x00E\x00D\x01(\x00F\x00A\x000\x00E\x00D\x00D\x009\x00F\x008\x006\x002\x004\x00B\x00F\x00D\x00B\x003\x00E\x00C\x00F\x006\x004\x004\x009\x002\x003\x00E\x00F\x000\x009\x007\x001\x00A\x006\x008\x000\x00E\x00E\x006\x00E\x03\x00\x00\x00\x00\x00\x00\xf0?\x03\xb8xf\x198uwB\x00\x03\x00\x00\x00\x00\x00\xac\x90@' @ 117334 : 1
+2021/01/30-10:36:29.415 16e9 Compacting 1@1 + 1@2 files
+2021/01/30-10:36:29.421 16e9 Generated table #111@1: 167 keys, 8815 bytes
+2021/01/30-10:36:29.421 16e9 Compacted 1@1 + 1@2 files => 8815 bytes
+2021/01/30-10:36:29.425 16e9 compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/01/30-10:36:29.425 16e9 Delete type=2 #107
+2021/01/30-10:36:29.425 16e9 Delete type=2 #110
+2021/01/30-10:36:29.426 16e9 Manual compaction at level-1 from '\x00\x02\x01\x1f\x04\x04\x01\x06\x00Q\x00U\x00E\x00U\x00E\x00D\x01(\x00F\x00A\x000\x00E\x00D\x00D\x009\x00F\x008\x006\x002\x004\x00B\x00F\x00D\x00B\x003\x00E\x00C\x00F\x006\x004\x004\x009\x002\x003\x00E\x00F\x000\x009\x007\x001\x00A\x006\x008\x000\x00E\x00E\x006\x00E\x03\x00\x00\x00\x00\x00\x00\xf0?\x03\xb8xf\x198uwB\x00\x03\x00\x00\x00\x00\x00\xac\x90@' @ 117334 : 1 .. (end); will stop at (end)

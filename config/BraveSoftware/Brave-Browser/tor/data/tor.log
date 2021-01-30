@@ -1,0 +1,41 @@
+Jan 27 22:06:48.000 [notice] Tor 0.4.4.6 opening new log file.
+Jan 27 22:06:48.094 [notice] Tor 0.4.4.6 running on Linux with Libevent 2.1.11-stable, OpenSSL 1.0.2u, Zlib 1.2.11, Liblzma N/A, and Libzstd N/A.
+Jan 27 22:06:48.095 [notice] Tor can't help you if you use it wrong! Learn how to be safe at https://www.torproject.org/download/download#warning
+Jan 27 22:06:48.095 [notice] Configuration file "/nonexistent" not present, using reasonable defaults.
+Jan 27 22:06:48.098 [notice] Opening Socks listener on 127.0.0.1:0
+Jan 27 22:06:48.098 [notice] Socks listener listening on port 42167.
+Jan 27 22:06:48.098 [notice] Opened Socks listener on 127.0.0.1:42167
+Jan 27 22:06:48.098 [notice] Opening Control listener on 127.0.0.1:0
+Jan 27 22:06:48.098 [notice] Control listener listening on port 43007.
+Jan 27 22:06:48.098 [notice] Opened Control listener on 127.0.0.1:43007
+Jan 27 22:06:48.000 [notice] Bootstrapped 0% (starting): Starting
+Jan 27 22:06:48.000 [notice] Starting with guard context "default"
+Jan 27 22:06:48.000 [notice] New control connection opened from 127.0.0.1.
+Jan 27 22:06:49.000 [notice] Bootstrapped 5% (conn): Connecting to a relay
+Jan 27 22:06:49.000 [notice] Bootstrapped 10% (conn_done): Connected to a relay
+Jan 27 22:06:49.000 [notice] Bootstrapped 14% (handshake): Handshaking with a relay
+Jan 27 22:06:49.000 [notice] Bootstrapped 15% (handshake_done): Handshake with a relay done
+Jan 27 22:06:49.000 [notice] Bootstrapped 20% (onehop_create): Establishing an encrypted directory connection
+Jan 27 22:06:49.000 [notice] Bootstrapped 25% (requesting_status): Asking for networkstatus consensus
+Jan 27 22:06:50.000 [notice] Bootstrapped 30% (loading_status): Loading networkstatus consensus
+Jan 27 22:06:51.000 [notice] I learned some more directory information, but not enough to build a circuit: We have no usable consensus.
+Jan 27 22:06:51.000 [notice] Bootstrapped 40% (loading_keys): Loading authority key certs
+Jan 27 22:06:52.000 [warn] Our clock is 2 hours, 53 minutes behind the time published in the consensus network status document (2021-01-28 04:00:00 UTC).  Tor needs an accurate clock to work correctly. Please check your time and date settings!
+Jan 27 22:06:52.000 [warn] Received microdesc flavor consensus with skewed time (CONSENSUS): It seems that our clock is behind by 2 hours, 53 minutes, or that theirs is ahead. Tor requires an accurate clock to work: please check your time, timezone, and date settings.
+Jan 27 22:06:52.000 [warn] Problem bootstrapping. Stuck at 40% (loading_keys): Loading authority key certs. (Clock skew -10388 in microdesc flavor consensus from CONSENSUS; CLOCK_SKEW; count 1; recommendation warn; host ? at ?)
+Jan 27 22:06:52.000 [notice] The current consensus has no exit nodes. Tor can only build internal paths, such as paths to onion services.
+Jan 27 22:06:52.000 [notice] Bootstrapped 45% (requesting_descriptors): Asking for relay descriptors
+Jan 27 22:06:52.000 [notice] I learned some more directory information, but not enough to build a circuit: We need more microdescriptors: we have 0/6853, and can only build 0% of likely paths. (We have 0% of guards bw, 0% of midpoint bw, and 0% of end bw (no exits in consensus, using mid) = 0% of path bw.)
+Jan 27 22:06:53.000 [notice] Bootstrapped 50% (loading_descriptors): Loading relay descriptors
+Jan 27 22:06:54.000 [notice] The current consensus contains exit nodes. Tor can build exit and internal paths.
+Jan 27 22:06:55.000 [notice] Bootstrapped 55% (loading_descriptors): Loading relay descriptors
+Jan 27 22:06:55.000 [notice] Bootstrapped 61% (loading_descriptors): Loading relay descriptors
+Jan 27 22:06:55.000 [notice] Bootstrapped 70% (loading_descriptors): Loading relay descriptors
+Jan 27 22:06:55.000 [notice] Bootstrapped 75% (enough_dirinfo): Loaded enough directory info to build circuits
+Jan 27 22:06:56.000 [notice] Bootstrapped 80% (ap_conn): Connecting to a relay to build circuits
+Jan 27 22:06:56.000 [notice] Bootstrapped 85% (ap_conn_done): Connected to a relay to build circuits
+Jan 27 22:06:56.000 [notice] Bootstrapped 89% (ap_handshake): Finishing handshake with a relay to build circuits
+Jan 27 22:06:57.000 [notice] Bootstrapped 90% (ap_handshake_done): Handshake finished with a relay to build circuits
+Jan 27 22:06:57.000 [notice] Bootstrapped 95% (circuit_create): Establishing a Tor circuit
+Jan 27 22:06:58.000 [notice] Bootstrapped 100% (done): Done
+Jan 27 22:07:05.000 [notice] Catching signal TERM, exiting cleanly.

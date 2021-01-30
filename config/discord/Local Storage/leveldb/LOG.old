@@ -1,0 +1,9 @@
+2021/01/24-14:22:52.978 13d3 Reusing MANIFEST /home/vlermanda/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2021/01/24-14:22:52.978 13d3 Recovering log #3
+2021/01/24-14:22:52.979 13d3 Reusing old log /home/vlermanda/.config/discord/Local Storage/leveldb/000003.log 
+2021/01/24-14:37:53.978 16c5 Level-0 table #5: started
+2021/01/24-14:37:53.992 16c5 Level-0 table #5: 19489 bytes OK
+2021/01/24-14:37:53.996 16c5 Delete type=0 #3
+2021/01/24-15:15:53.977 16c5 Level-0 table #7: started
+2021/01/24-15:15:53.988 16c5 Level-0 table #7: 12230 bytes OK
+2021/01/24-15:15:53.992 16c5 Delete type=0 #4

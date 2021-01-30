@@ -1,0 +1,8 @@
+2021/01/22-22:33:31.257 5ea8 Reusing MANIFEST /home/vlermanda/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.instagram.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/01/22-22:33:31.257 5ea8 Recovering log #15
+2021/01/22-22:33:31.257 5ea8 Reusing old log /home/vlermanda/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.instagram.com_0.indexeddb.leveldb/000015.log 
+2021/01/22-22:33:37.316 6009 Level-0 table #19: started
+2021/01/22-22:33:37.316 6009 Level-0 table #19: 0 bytes OK
+2021/01/22-22:33:37.328 6009 Delete type=0 #15
+2021/01/22-22:33:37.328 6009 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/01/22-22:33:37.328 6009 Manual compaction at level-1 from (begin) .. (end); will stop at (end)

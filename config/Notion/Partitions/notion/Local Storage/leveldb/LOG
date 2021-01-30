@@ -1,0 +1,10 @@
+2021/01/26-15:01:25.643 6763 Reusing MANIFEST /home/vlermanda/.config/Notion/Partitions/notion/Local Storage/leveldb/MANIFEST-000001
+2021/01/26-15:41:33.465 6763 Level-0 table #5: started
+2021/01/26-15:41:33.472 6763 Level-0 table #5: 20916 bytes OK
+2021/01/26-15:41:33.477 6763 Delete type=0 #3
+2021/01/26-17:41:33.465 6e31 Level-0 table #7: started
+2021/01/26-17:41:33.477 6e31 Level-0 table #7: 22583 bytes OK
+2021/01/26-17:41:33.481 6e31 Delete type=0 #4
+2021/01/26-19:41:33.464 6e31 Level-0 table #9: started
+2021/01/26-19:41:33.472 6e31 Level-0 table #9: 22596 bytes OK
+2021/01/26-19:41:33.477 6e31 Delete type=0 #6

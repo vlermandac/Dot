@@ -1,0 +1,15 @@
+2021/01/27-22:01:01.077 111a Reusing MANIFEST /home/vlermanda/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.twitch.tv_0.indexeddb.leveldb/MANIFEST-000001
+2021/01/27-22:01:01.077 111a Recovering log #62
+2021/01/27-22:01:01.077 111a Reusing old log /home/vlermanda/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.twitch.tv_0.indexeddb.leveldb/000062.log 
+2021/01/27-22:01:33.097 9eb Level-0 table #67: started
+2021/01/27-22:01:33.108 9eb Level-0 table #67: 465 bytes OK
+2021/01/27-22:01:33.113 9eb Delete type=0 #62
+2021/01/27-22:01:33.113 9eb Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/01/27-22:01:33.113 9eb Manual compaction at level-1 from (begin) .. (end); will stop at '\x00\x01\x01\x02\x01\x0f\x00c\x00u\x00r\x00r\x00e\x00n\x00t\x00_\x00u\x00s\x00e\x00r\x00_\x00i\x00d' @ 209 : 1
+2021/01/27-22:01:33.113 9eb Compacting 1@1 + 1@2 files
+2021/01/27-22:01:33.117 9eb Generated table #68@1: 20 keys, 575 bytes
+2021/01/27-22:01:33.117 9eb Compacted 1@1 + 1@2 files => 575 bytes
+2021/01/27-22:01:33.120 9eb compacted to: files[ 0 0 1 0 0 0 0 ]
+2021/01/27-22:01:33.121 9eb Delete type=2 #64
+2021/01/27-22:01:33.121 9eb Delete type=2 #67
+2021/01/27-22:01:33.121 9eb Manual compaction at level-1 from '\x00\x01\x01\x02\x01\x0f\x00c\x00u\x00r\x00r\x00e\x00n\x00t\x00_\x00u\x00s\x00e\x00r\x00_\x00i\x00d' @ 209 : 1 .. (end); will stop at (end)
