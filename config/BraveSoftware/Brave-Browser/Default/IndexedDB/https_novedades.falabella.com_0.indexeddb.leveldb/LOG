@@ -1,5 +1,0 @@
-2021/01/23-17:03:32.122 efb Reusing MANIFEST /home/vlermanda/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_novedades.falabella.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/01/23-17:05:23.466 10f6 Level-0 table #5: started
-2021/01/23-17:05:23.473 10f6 Level-0 table #5: 8427 bytes OK
-2021/01/23-17:05:23.478 10f6 Delete type=0 #3
-2021/01/23-17:05:23.478 10f6 Manual compaction at level-0 from (begin) .. (end); will stop at (end)

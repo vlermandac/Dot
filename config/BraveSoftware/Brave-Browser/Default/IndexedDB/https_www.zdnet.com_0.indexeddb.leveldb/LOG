@@ -1,5 +1,0 @@
-2021/01/23-18:13:03.113 1d32 Reusing MANIFEST /home/vlermanda/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/https_www.zdnet.com_0.indexeddb.leveldb/MANIFEST-000001
-2021/01/23-18:13:06.689 1d32 Level-0 table #5: started
-2021/01/23-18:13:06.693 1d32 Level-0 table #5: 812 bytes OK
-2021/01/23-18:13:06.699 1d32 Delete type=0 #3
-2021/01/23-18:13:06.700 1d32 Manual compaction at level-0 from (begin) .. (end); will stop at (end)
