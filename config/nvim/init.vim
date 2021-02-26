@@ -1,4 +1,4 @@
-let mapleader =","
+"let mapleader =" "
 
 
 
@@ -60,7 +60,7 @@ let g:UltiSnipsJumpBackwardTrigger = '<s-tab>'
 
 " All the languages Kite supports
 let g:kite_supported_languages = ['*']
-let g:kite_tab_complete=1
+"let g:kite_tab_complete=1
 set belloff+=ctrlg
 
 " Some basics:

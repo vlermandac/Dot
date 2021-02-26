@@ -1,113 +1,44 @@
-[colors]
-background = #bdd0e5
-foreground = ${xrdb:color7:#222}
-foreground-alt = ${xrdb:color7:#222}
-primary = ${xrdb:color1:#222}
-secondary = ${xrdb:color2:#222}
-alert = ${xrdb:color3:#222}
+include-file = ~/.config/polybar/colors.ini
+include-file = ~/.config/polybar/modules.ini
 
-[bar/example]
-;monitor = ${env:MONITOR:HDMI-1}
-width = 100%
-height = 30
-;offset-x = 1%
-;offset-y = 1%
-;radius = 6.0
-;fixed-center = false
+[bar/mybar]
+override-redirect = true
+wm-restack = bspwm
+
+enable-ipc = true
+
 background = ${colors.background}
 foreground = ${colors.foreground}
+fixed-center = true
+bottom = false
+width = 100%
+height = 35
+radius = 0.0
+offset-y = 0
+offset-x = 0
+padding = 0
+line-size = 3
+; border-top-size = 5
+border-top-color = ${colors.background}
+; border-bottom-size = 5
+border-bottom-color = ${colors.background}
 
-;line-size = 3
-;line-color = #f00
+include-file = ~/.config/polybar/fonts.ini
 
-;border-size = 4
-;border-color = #00000000
+modules-left = workspaces
+modules-center = spotify-sym spotify spotify-prev spotify-play-pause spotify-next
+modules-right = date battery pulseaudio cpu
+module-margin = 0
+tray-position = left
+tray-maxsize = 15
+tray-background = ${colors.background}
+tray-offset-x = 6
+tray-offset-y = 2
+tray-padding = 1
 
-;padding-left = 0
-;padding-right = 2
-
-;module-margin-left = 1
-;module-margin-right = 2
-
-;font-0 = fixed:pixelsize=10;1
-;font-1 = "Hack Nerd Font Mono:style=Regular"
-;font-2 = "Noto Color Emoji:style=Regular"
-
-modules-left =
-modules-center =
-modules-right = date
-
-;tray-position = right
-;tray-padding = 2
-;tray-background = #0063ff
-
-;wm-restack = bspwm
-
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
-
-;cursor-click = pointer
-;cursor-scroll = ns-resize
-
-;enable-ipc = true
-
-[module/date]
-type = internal/date
-interval = 1.0
-
-date = "%Y-%m-%d%"
-time = "%H:%M"
-
-label = "%date% - %time%"
-
-[module/pulseaudio]
-type = internal/pulseaudio
-
-; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
-; If not, uses default sink
-;sink = alsa_output.pci-0000_12_00.3.analog-stereo
-
-; Use PA_VOLUME_UI_MAX (~153%) if true, or PA_VOLUME_NORM (100%) if false
-; Default: true
-use-ui-max = true
-
-; Interval for volume increase/decrease (in percent points)
-; Default: 5
-interval = 5
-
-; Available tags:
-;   <label-volume> (default)
-;   <ramp-volume>
-;   <bar-volume>
-format-volume = <ramp-volume> <label-volume>
-
-; Available tags:
-;   <label-muted> (default)
-;   <ramp-volume>
-;   <bar-volume>
-;format-muted = <label-muted>
-
-; Available tokens:
-;   %percentage% (default)
-;   %decibels% (unreleased)
-;label-volume = %percentage%%
-
-; Available tokens:
-;   %percentage% (default)
-;   %decibels% (unreleased)
-label-muted = 🔇 muted
-label-muted-foreground = #666
-
-; Only applies if <ramp-volume> is used
-ramp-volume-0 = 🔈
-ramp-volume-1 = 🔉
-ramp-volume-2 = 🔊
-
-; Right and Middle click (unreleased)
-click-right = pavucontrol &
-; click-middle =
+[settings]
+throttle-output = 5
+throttle-output-for = 10
+throttle-input-for = 30
+screenchange-reload = true
+pseudo-transparency = true

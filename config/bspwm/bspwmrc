@@ -1,6 +1,6 @@
 #! /bin/sh
 
-bspc monitor -d I II
+bspc monitor -d I II III
 
 bspc config automatic_scheme alternate
 bspc config initial_polarity second_child
@@ -8,7 +8,10 @@ bspc config initial_polarity second_child
 bspc config border_width 1
 bspc config window_gap 10
 
-bspc config top_padding 40
+bspc config top_padding 2
+bspc config -d I top_padding 38
+bspc config -d II top_padding 38
+bspc config -d III top_padding 38
 bspc config left_padding 2
 bspc config right_padding 2
 bspc config bottom_padding 2
@@ -29,3 +32,4 @@ bspc rule -a Wrapper-2.0 state=floating
 bspc rule -a MPlayer state=floating
 bspc rule -a Xfce4-settings-manager follow=on state=tiled
 bspc rule -a Xfce4-notes state=floating rectangle=500x500+1250+100
+bspc rule -a Zathura state=tiled
