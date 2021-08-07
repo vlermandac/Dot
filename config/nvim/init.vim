@@ -1,7 +1,4 @@
-"let mapleader =" "
-
-
-
+let mapleader =","
 
 if ! filereadable(expand('~/.config/nvim/autoload/plug.vim'))
 	echo "Downloading junegunn/vim-plug to manage plugins..."
@@ -10,6 +7,8 @@ if ! filereadable(expand('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/plugged')
+Plug 'SirVer/ultisnips'
+Plug 'donRaphaco/neotex', { 'for': 'tex' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'sheerun/vim-polyglot'
@@ -34,12 +33,13 @@ call plug#end()
 set bg=light
 set go=a
 set mouse=a
+set encoding=utf8
 set nohlsearch
 set clipboard+=unnamedplus
 set shortmess+=c
-set termguicolors
-colorscheme forest-night
-"colorscheme wal
+"set termguicolors
+"colorscheme forest-night
+colorscheme wal
 
 let g:fzf_layout = { 'window': { 'width': 0.8, 'height': 0.8 } }
 let $FZF_DEFAULT_OPTS='--reverse'

@@ -1,0 +1,39 @@
+#define FOREGROUND #ebedec
+#define BACKGROUND #37404d
+
+#define COLOR0  #7d8294
+#define COLOR8  #7d8294
+#define COLOR1  #ebbaab
+#define COLOR9  #ebbaab
+#define COLOR2  #cadcd4
+#define COLOR10 #cadcd4
+#define COLOR3  #e9d7be
+#define COLOR11 #e9d7be
+#define COLOR4  #9dbec5
+#define COLOR12 #9dbec5
+#define COLOR5  #e98488
+#define COLOR13 #e98488
+#define COLOR6  #ccd4e4
+#define COLOR14 #ccd4e4
+#define COLOR7  #ebedec
+#define COLOR15 #ebedec
+
+*.foreground:  FOREGROUND
+*.background:  BACKGROUND
+*.cursorColor: FOREGROUND
+*.color0:      COLOR0
+*.color8:      COLOR8
+*.color1:      COLOR1
+*.color9:      COLOR9
+*.color2:      COLOR2
+*.color10:      COLOR10
+*.color3:      COLOR3
+*.color11:      COLOR11
+*.color4:      COLOR4
+*.color12:      COLOR12
+*.color5:      COLOR5
+*.color13:      COLOR13
+*.color6:      COLOR6
+*.color14:      COLOR14
+*.color7:      COLOR7
+*.color15:     COLOR15

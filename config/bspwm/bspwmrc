@@ -5,8 +5,9 @@ bspc monitor -d I II III
 bspc config automatic_scheme alternate
 bspc config initial_polarity second_child
 
-bspc config border_width 1
-bspc config window_gap 10
+bspc config border_width 3
+bspc config window_gap 20
+bspc config active_border_color '#323d43'
 
 bspc config top_padding 2
 bspc config -d I top_padding 38

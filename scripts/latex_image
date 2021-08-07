@@ -1,0 +1,8 @@
+#!/bin/sh
+
+num=$(cat /home/vlermanda/scripts/number)
+var=$(($num + 1))
+screen="/home/vlermanda/Pictures/ss${var}.png"
+maim -s -u $screen
+echo $var > number
+echo $screen | xclip -selection clipboard -i

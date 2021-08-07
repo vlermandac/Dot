@@ -38,6 +38,11 @@ alt + t
 alt + r
 	retroarch
 
+alt + q
+	maim -s -u | xclip -selection clipboard -t image/png -i
+
+alt + w
+	~/scripts/latex_image
 ###########################
 # bspwm hotkeys
 ###########################
@@ -97,7 +102,7 @@ F6
 	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {+,-} 2 ))
 
 # set the window state
-{F9,F10,F11,F12}
+{F9,F10,alt + F11,F12}
 	bspc node -t {floating,tiled,pseudo_tiled,fullscreen}
 
 # === focus/swap ===
@@ -109,3 +114,11 @@ super + {h,l}
 # focus the next/previous desktop
 super + {j,k}
 	bspc desktop -f {prev,next}
+
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0 || bspc node -z right -20 0, \
+                bottom 0 20 || bspc node -z top 0 20,\
+                top 0 -20 || bspc node -z bottom 0 -20,\
+                right 20 0 || bspc node -z left 20 0}
+
+

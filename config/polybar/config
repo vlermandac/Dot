@@ -27,13 +27,13 @@ include-file = ~/.config/polybar/fonts.ini
 
 modules-left = workspaces
 modules-center = spotify-sym spotify spotify-prev spotify-play-pause spotify-next
-modules-right = date battery pulseaudio cpu
+modules-right = battery pulseaudio cpu date
 module-margin = 0
-tray-position = left
+tray-position = right
 tray-maxsize = 15
 tray-background = ${colors.background}
-tray-offset-x = 6
-tray-offset-y = 2
+;tray-offset-x = 6
+;tray-offset-y = 2
 tray-padding = 1
 
 [settings]

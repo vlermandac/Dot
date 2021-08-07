@@ -1,0 +1,161 @@
+\documentclass{beamer}
+\title{Resumen Loseless Image Compression using List Update Algorithms}
+\subtitle{Vicente Lermanda Candia}
+
+\usetheme{Simple}
+\setbeamertemplate{frametitle}[default][center]
+\begin{document}
+	\frame {
+		\titlepage
+	}
+	\frame {
+		\centering
+		{\Huge Abstract}
+	}
+
+	\frame{
+		\frametitle{\huge{Introducción}}
+		\centering
+		\begin{itemize}
+			\item {\large Se debe aprovechar localidad y redundancia de datos.}
+				\vspace*{1cm}
+			\item {\large Se quiere minimizar el ratio de compresión.}
+				\[
+					Compression\;Ratio = \frac{Uncompressed\;Size}{Compressed\;Size}
+				\]
+				\vspace*{0cm}
+		\item {\large Se debe ser eficiente en términos de recursos computacionales.}
+				\vspace*{1cm}
+			\item {\large No obstante, un mayor uso de recursos, en particular tiempo,
+				resulta en mejores ratios de compresión (trade-off).}
+		\end{itemize}
+	}
+	\frame{
+		\centering
+		\begin{itemize}
+			\item {\large Distintas técnicas de reducción de entropía
+					(prediction-based, wavelet-transform-based, deep learning).
+			No son directamente comparables.}
+				\vspace*{1cm}
+			\item {\large Para datos secuenciales (1D), frecuentemete se usan list
+				update algorithms para reducir entropía (Move-To-Front)}
+				\vspace*{1cm}
+			\item {\large Finalmente dividimos este esquema en dos etapas:
+				\begin{enumerate}
+					\item Linealización con Hilbert space-filling curves (2D $\to$ 1D).
+					\item Codificación con list update algorithms (Move-To-Front).
+				\end{enumerate}}
+		\end{itemize}
+	}
+
+	\frame{
+		\frametitle{\huge{Linealización de una imágen a una secuencia}}
+		\centering
+		\begin{itemize}
+			\item {\large Curva Hilbert orden $k$ cubre una matriz de tamaño $2^k
+				\times 2^k$.}
+				\vspace*{0.5cm}
+				\begin{figure}[h]
+					\centering
+					\includegraphics[width=0.8\textwidth]{/home/vlermanda/Pictures/ss19.png}
+				\end{figure}
+				\vspace*{0.5cm}
+		\item {\large La curva de Hilbert se computa eficientemente usando operaciones de bits y lookup tables.}
+
+		\end{itemize}
+	}
+
+	\frame{
+		\centering
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.8\textwidth]{/home/vlermanda/Pictures/ss20.png}
+		\end{figure}
+		\begin{itemize}
+		\item {\small Se considera ''Max-Model'' para determinar localidad
+			de datos secuenciales.}
+		\item {\small Dada una secuencia \sigma, definimos:}\\
+		\item {\small \emph{Ventana} de tamaño $w$ en $\sigma $: subsecuencia de $w$
+		solicitudes consecutivas en $\sigma$.}
+		\item {\small Se dice que $\sigma$ es consistente con alguna función cóncava creciente
+			$f$, si el número de solicitudes distintas en cualquier ventana de
+		tamaño $w$, es a lo más $f(w_0), \forall w \in \mathbb N$.}
+		\item {\small Extendiendo a imágenes, las ventanas pasan a ser cuadrados de
+		$w$ píxeles.}
+
+		\end{itemize}
+	}
+
+	\frame{
+		\centering
+		\begin{itemize}
+			\item {\HUGE \textbf{Teorema:} Una imágen tiene localidad Max-Model si y sólo
+					si la secuencia formada por la curva de Hilbert también tiene localidad
+				Max-Model.}
+		\end{itemize}
+	}
+
+	\frame{
+		\frametitle{{\huge List update encoding}}
+	\centering
+		\begin{itemize}
+		\item {\large Frecuentemente usado para reducir la entropía de una secuencia.}
+			\vspace*{0.5cm}
+		\item {\large Guarda items de una secuencia en un linked-list.}
+			\vspace*{0.5cm}
+		\item {\large Accede a la posición $i$ en tiempo $i$.}
+			\vspace*{0.5cm}
+		\item {\large Al acceder puede acercar el item al frente sin costo adicional
+			(free exchange).}
+			\vspace*{0.5cm}
+		\item {\large Además, el algoritmo puede re-ordenar la lista usando paid
+			exchanges, lo que corresponde a hacer swap entre elementos consecutivos
+		por costo 1.}
+		\end{itemize}
+	}
+
+	\frame{
+	\frametitle{{\huge Move-To-Front}}
+	\centering
+		\begin{itemize}
+		\item {\large Es un list update algorithm.}
+			\vspace*{0.5cm}
+		\item {\large Mueve un item accesado al frente de la lista por free exchange.}
+			\vspace*{0.5cm}
+		\item {\large Se concluye que codificaciones MTF son estríctamente mejores
+			para secuencias formadas por una curva de Hilbert en una imágen.}
+		\end{itemize}
+	}
+
+	\frame{
+
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.6\textwidth]{/home/vlermanda/Pictures/ss25.png}
+	\end{figure}
+		\begin{itemize}
+			\item Si hay buena localidad en la imágen, obtendremos una secuencia con valores
+				pequeños, lo cual reduce la entropía.
+		\end{itemize}
+
+	}
+
+\frame{
+		\frametitle{{\huge Experimental results}}
+	\centering
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.65\textwidth]{/home/vlermanda/Pictures/ss21.png}
+	\end{figure}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.65\textwidth]{/home/vlermanda/Pictures/ss22.png}
+	\end{figure}
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=0.65\textwidth]{/home/vlermanda/Pictures/ss23.png}
+	\end{figure}
+}
+
+
+\end{document}

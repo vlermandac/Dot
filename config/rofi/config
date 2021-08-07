@@ -5,14 +5,14 @@ rofi.columns:                        9
 rofi.padding:                        2
 rofi.font:                           Avenir Next LT Pro Book 12
 
-rofi.color-normal:                   	#00000000, #e8e1df, #00000000, #05e8e1df, #a25f46
+rofi.color-normal:                   	#00000000, #e8e1df, #00000000, #05e8e1df, #ebbaab
 ! State:                                   'bg',    'fg',    'bgalt',    'hlbg',   'hlfg'
 
 rofi.color-urgent:                   	#00000000, #b69e6d, #00000000, #05e8e1df, #b69e6d
 
 rofi.color-active:                      #00000000, #345b6d, #00000000, #05e8e1df, #345b6d
 
-rofi.color-window:                  #272725, #a25f46, #a25f46
+rofi.color-window:                  #37404d, #ebbaab, #ebbaab
 !                                  'background', 'border', 'separator'
 
 rofi.fullscreen: 		     false

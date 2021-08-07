@@ -1,0 +1,5 @@
+- -af "highpass=f=200, lowpass=f=3000"
+ffmpeg -y -f x11grab -s 1920x1080 -i :0.0+1920,0 -f alsa -i default out.mp4
+
+ffmpeg -y -f x11grab -s 1920x1080 -i :0.0+1920,0 -f alsa -i default -af "afftdn=nf=-25" out.mp4
+ffmpeg -i out.mp4 -af "highpass=f=200, lowpass=f=3000" 2out.mp4

@@ -1,5 +1,5 @@
-favorites=xfce4-terminal-emulator.desktop,xfce4-file-manager.desktop,xfce4-web-browser.desktop,xfce4-mail-reader.desktop
-recent=xfce4-notifyd-config.desktop,panel-preferences.desktop,nm-connection-editor.desktop,xfce-backdrop-settings.desktop,xfce4-file-manager.desktop,xfce-display-settings.desktop,xfce-session-settings.desktop,org.manjaro.pamac.manager.desktop,xfce-workspaces-settings.desktop,pavucontrol.desktop
+favorites=
+recent=xfce4-terminal-emulator.desktop,xfce-keyboard-settings.desktop,xfce-session-settings.desktop,pavucontrol.desktop,blueman-manager.desktop,blueman-adapters.desktop,brave-browser.desktop,xfce-display-settings.desktop
 button-icon=/usr/share/icons/whiskermenu-manjaro.svg
 button-single-row=false
 show-button-title=false
@@ -21,7 +21,7 @@ position-commands-alternate=false
 position-categories-alternate=false
 stay-on-focus-out=false
 confirm-session-command=true
-menu-width=421
+menu-width=400
 menu-height=519
 menu-opacity=100
 command-settings=xfce4-settings-manager
@@ -49,13 +49,13 @@ show-command-profile=true
 search-actions=5
 
 [action0]
-name=Páginas del manual
+name=Man Pages
 pattern=#
 command=exo-open --launch TerminalEmulator man %s
 regex=false
 
 [action1]
-name=Búsqueda en la Web
+name=Web Search
 pattern=?
 command=exo-open --launch WebBrowser https://duckduckgo.com/?q=%u
 regex=false
@@ -67,13 +67,13 @@ command=exo-open --launch WebBrowser https://en.wikipedia.org/wiki/%u
 regex=false
 
 [action3]
-name=Abrir en la terminal
+name=Run in Terminal
 pattern=!
 command=exo-open --launch TerminalEmulator %s
 regex=false
 
 [action4]
-name=Abrir un URI
+name=Open URI
 pattern=^(file|http|https):\\/\\/(.*)$
 command=exo-open \\0
 regex=true

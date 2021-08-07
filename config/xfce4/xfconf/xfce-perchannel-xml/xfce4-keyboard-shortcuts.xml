@@ -33,13 +33,10 @@
       <property name="&lt;Control&gt;Escape" type="empty"/>
     </property>
     <property name="custom" type="empty">
-      <property name="&lt;Alt&gt;F2" type="empty">
-        <property name="startup-notify" type="bool" value="true"/>
-      </property>
-      <property name="&lt;Super&gt;r" type="empty">
-        <property name="startup-notify" type="bool" value="true"/>
-      </property>
       <property name="&lt;Alt&gt;F3" type="empty">
+        <property name="startup-notify" type="bool" value="true"/>
+      </property>
+      <property name="&lt;Alt&gt;F2" type="empty">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
       <property name="override" type="bool" value="true"/>
@@ -157,6 +154,7 @@
       <property name="&lt;Alt&gt;&lt;Shift&gt;Tab" type="string" value="cycle_reverse_windows_key"/>
       <property name="&lt;Alt&gt;space" type="string" value="popup_menu_key"/>
       <property name="&lt;Alt&gt;Delete" type="string" value="del_workspace_key"/>
+      <property name="&lt;Alt&gt;F4" type="string" value="close_window_key"/>
       <property name="&lt;Shift&gt;&lt;Alt&gt;Page_Down" type="string" value="lower_window_key"/>
       <property name="&lt;Alt&gt;F6" type="string" value="stick_window_key"/>
       <property name="&lt;Alt&gt;F8" type="string" value="resize_window_key"/>
@@ -200,7 +198,6 @@
       <property name="&lt;Shift&gt;&lt;Control&gt;&lt;Alt&gt;Left" type="string" value="move_window_left_workspace_key"/>
       <property name="&lt;Shift&gt;&lt;Control&gt;&lt;Alt&gt;Right" type="string" value="move_window_right_workspace_key"/>
       <property name="override" type="bool" value="true"/>
-      <property name="&lt;Super&gt;q" type="string" value="close_window_key"/>
     </property>
   </property>
   <property name="providers" type="array">
